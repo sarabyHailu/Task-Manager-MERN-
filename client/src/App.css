@@ -1,0 +1,251 @@
+/* body {
+  font-family: sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.app {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.add-task-form,
+.task-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task-form input,
+.add-task-form textarea,
+.add-task-form select,
+.task-item input,
+.task-item textarea,
+.task-item select {
+  padding: 8px;
+  font-size: 1em;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.task-item {
+  background: #fafafa;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-left: 6px solid;
+}
+
+.task-item.pending {
+  border-color: orange;
+}
+
+.task-item.in\ progress {
+  border-color: blue;
+}
+
+.task-item.completed {
+  border-color: green;
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+.logout-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.logout-btn:hover {
+  background: #d9363e;
+}
+ */
+/* General Layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  margin: 0;
+  padding: 20px;
+}
+
+/* App Container */
+.app {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Task Management UI */
+.add-task-form,
+.task-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task-form input,
+.add-task-form textarea,
+.add-task-form select,
+.task-item input,
+.task-item textarea,
+.task-item select {
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab7;
+}
+
+.task-item {
+  background: #fafafa;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-left: 6px solid;
+  border-radius: 6px;
+}
+
+.task-item.pending {
+  border-color: orange;
+}
+
+.task-item.in\ progress {
+  border-color: blue;
+}
+
+.task-item.completed {
+  border-color: green;
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+/* Logout Button */
+.logout-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logout-btn:hover {
+  background: #d9363e;
+}
+
+/* ---------- AUTHENTICATION FORM STYLES ---------- */
+
+/* Auth Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Auth Form */
+.auth-form {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-form h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.auth-form p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Auth Inputs */
+.auth-input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: #74ebd5;
+}
+
+/* Auth Buttons */
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-top: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #357ab7;
+}
+
+/* Auth Messages */
+.auth-error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.auth-success {
+  color: green;
+  margin-top: 10px;
+  font-size: 14px;
+}
